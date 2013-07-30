@@ -1,0 +1,67 @@
+/******************************************************************
+
+Stylesheet: IE Stylesheet
+
+******************************************************************/
+
+@import "normalize.less";
+
+.clearfix {
+  zoom: 1;
+	&:before, &:after { content: ""; display: table; }
+	&:after { clear: both; }
+}
+
+@serif: "Adobe Caslon Pro", Palatino, "Times New Roman", serif;
+
+@font-face { 
+	font-family: 'Palatino Small Caps'; /* Small Caps */
+	src:url('../fonts/palatino_small_caps.eot');
+	src:url('../fonts/palatino_small_caps.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/palatino_small_caps.woff') format('woff'),
+		url('../fonts/palatino_small_caps.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+	font-variant: small-caps;
+}
+
+@font-face { 
+	font-family: 'icomoon'; /* Icon Font */
+	src:url('../icons/icomoon.eot');
+	src:url('../icons/icomoon.eot?#iefix') format('embedded-opentype'),
+		url('../icons/icomoon.svg#icomoon') format('svg'),
+		url('../icons/icomoon.woff') format('woff'),
+		url('../icons/icomoon.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.float-left { float: left; }
+.float-right { float: right; }
+
+
+@import "base.less";
+
+html {
+	height: 101%;
+}
+.alignleft, img.alignleft { 
+	margin-right: 1.125em; 
+	display: inline; 
+	.float-left;
+}
+.alignright, img.alignright { 
+	margin-left: 1.5em; 
+	display: inline; 
+	.float-right;
+}
+.aligncenter, img.aligncenter { 
+	margin-right: auto; 
+	margin-left: auto; 
+	display: block; 
+	clear: both; 
+}
+
+
+@import "768up.less";
+
