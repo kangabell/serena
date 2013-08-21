@@ -1,0 +1,123 @@
+/******************************************************************
+
+Stylesheet: 768px Wide & Up Stylesheet for Serena theme
+
+******************************************************************/
+
+.wrap {
+	max-width: 1140px;
+}
+
+#inner-header {
+	float: left;	
+}
+
+a {
+	-webkit-transition: color 0.25s ease-in;
+	-moz-transition:    color 0.25s ease-in;
+	-ms-transition:     color 0.25s ease-in;
+	-o-transition:      color 0.25s ease-in;
+	transition:         color 0.25s ease-in;
+}
+
+#main {
+	float: left;
+}
+
+.sidebar {
+	border-top: none;
+}
+
+.nav {
+	float: right;
+	padding-bottom: 0.25em;
+	//border-bottom: 1px solid lighten(black, 60%);
+	margin-bottom: 0.5em;
+
+	li {
+		display: inline;
+		position: relative;
+		border-top: none;
+		border-right: 1px solid lighten(black, 50%);
+		padding: 4px 0;	
+		a {
+			display: inline !important;
+		}
+		&:last-child {
+			border-right: none;
+		}	
+
+		ul.sub-menu,
+		ul.children {
+			position: absolute;
+			width: 600px;
+			right: 0;
+			display: none;	
+			z-index: 8999;
+
+			li {
+				float: right;
+				border-right: none;
+				border-top: 1px solid lighten(black, 60%);
+				
+				margin-top: 0.5em;
+				a {
+				}
+				&:first-child a {
+				}
+				&:last-child {
+					a {
+					}
+				}
+			}
+		} 
+
+		/* showing sub-menus */
+		&:hover ul {
+			top: auto;
+			display: block;
+		}
+
+	} /* end .nav li */
+
+} /* end .nav */
+
+/*********************
+FOOTER
+*********************/
+
+.credit {
+	float: right;
+}
+
+/*********************
+GRID
+based on the 1140 grid: http://cssgrid.net/
+*********************/
+
+.onecol    { width: 4.85%;  }
+.twocol    { width: 13.45%; }
+.threecol  { width: 22.05%; }
+.fourcol   { width: 30.75%; }
+.fivecol   { width: 39.45%; }
+.sixcol    { width: 48%; }
+.sevencol  { width: 56.75%; }
+.eightcol  { width: 65.4%; }
+.ninecol   { width: 74.05%; }
+.tencol    { width: 82.7%; }
+.elevencol { width: 91.35%; }
+.twelvecol { width: 100%; }
+
+.onecol, .twocol, .threecol, .fourcol, .fivecol, .sixcol, .sevencol, .eightcol, .ninecol, .tencol, .elevencol, .twelvecol {
+  position: relative;
+  float: left;
+  margin-left: 2.762430939%;
+}
+
+.first {
+  margin-left: 0;
+}
+
+.last {
+  float: right;
+}

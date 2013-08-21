@@ -1,0 +1,293 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Serena 1.0\n"
+"POT-Creation-Date: 2013-03-10 16:23-0500\n"
+"PO-Revision-Date: 2013-03-10 16:27-0500\n"
+"Last-Translator: \n"
+"Language-Team: Kanga Bell Co. <k@kangabell.com>\n"
+"Language: English\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.5\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;_e;__\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: \n"
+
+#: 404.php:11
+msgid "Page Missing"
+msgstr " "
+
+#: 404.php:17
+msgid "Sorry, but nothing was found here.<br /> Maybe try a search?"
+msgstr " "
+
+#: archive.php:14
+msgid "Posts Tagged:"
+msgstr " "
+
+#: archive.php:23
+msgid "Posts By:"
+msgstr " "
+
+#: archive.php:28
+#: archive.php:33
+#: archive.php:38
+msgid "Archives:"
+msgstr " "
+
+#: archive.php:50
+#: search.php:16
+#, php-format
+msgid ""
+"by <span class=\"author\">%3$s</span>, <time class=\"updated\" datetime="
+"\"%1$s\" pubdate>%2$s</time>"
+msgstr ""
+"<span class=\"author\"></span>, <time class=\"updated\" datetime=\"%1$s\" "
+"pubdate></time>"
+
+#: archive.php:71
+#: blog.php:47
+#: search.php:37
+msgid "&laquo; Older"
+msgstr " "
+
+#: archive.php:72
+#: blog.php:48
+#: search.php:38
+msgid "Newer &raquo;"
+msgstr " "
+
+#: archive.php:80
+#: blog.php:56
+#: page-sidebar.php:38
+#: page.php:33
+#: single.php:40
+msgid "Article Missing"
+msgstr " "
+
+#: archive.php:83
+#: blog.php:59
+#: page-sidebar.php:41
+#: page.php:36
+#: single.php:43
+msgid "Sorry, but something is missing. Please try again!"
+msgstr " "
+
+#: blog.php:23
+#: functions.php:404
+#: index.php:13
+#: single.php:13
+#, php-format
+msgid "<time datetime=\"%1$s\" pubdate>%2$s</time>"
+msgstr " "
+
+#: blog.php:27
+#: index.php:17
+#: single.php:17
+#, php-format
+msgid "by %1$s"
+msgstr " "
+
+#: comments.php:15
+msgid "This post is password protected. Enter the password to view comments."
+msgstr " "
+
+#: comments.php:25
+msgid "Comments"
+msgstr " "
+
+#: comments.php:39
+msgid "Comments are closed."
+msgstr " "
+
+#: comments.php:52
+msgid "Leave a Comment"
+msgstr " "
+
+#: comments.php:52
+#, php-format
+msgid "Leave a Comment for %s"
+msgstr " "
+
+#: comments.php:62
+#, php-format
+msgid "You must be %1$slogged in%2$s to post a comment."
+msgstr " "
+
+#: comments.php:70
+msgid "Logged in as"
+msgstr " "
+
+#: comments.php:70
+msgid "Log out of this account"
+msgstr " "
+
+#: comments.php:70
+msgid "Log out"
+msgstr " "
+
+#: comments.php:70
+msgid "&raquo;"
+msgstr " "
+
+#: comments.php:77
+msgid "Name"
+msgstr " "
+
+#: comments.php:77
+#: comments.php:82
+msgid "(required)"
+msgstr " "
+
+#: comments.php:78
+msgid "Name *"
+msgstr " "
+
+#: comments.php:82
+msgid "Mail"
+msgstr " "
+
+#: comments.php:83
+msgid "E-Mail *"
+msgstr " "
+
+#: comments.php:84
+msgid "(will not be published)"
+msgstr " "
+
+#: comments.php:88
+msgid "Website"
+msgstr " "
+
+#: comments.php:89
+msgid "Website URL"
+msgstr " "
+
+#: comments.php:99
+msgid "&#8618;"
+msgstr " "
+
+#: functions.php:125
+#, php-format
+msgid "Posts by %s"
+msgstr " "
+
+#: functions.php:196
+#: functions.php:212
+msgid "The Main Menu"
+msgstr " "
+
+#: functions.php:225
+msgid "Homepage Sidebar"
+msgstr " "
+
+#: functions.php:226
+msgid "The widget area for the homepage."
+msgstr " "
+
+#: functions.php:234
+msgid "Sidebar"
+msgstr " "
+
+#: functions.php:235
+msgid "The widget area for the homepage & blog pages."
+msgstr " "
+
+#: functions.php:243
+msgid "Page Sidebar"
+msgstr " "
+
+#: functions.php:244
+msgid "The sidebar for the \"w/Sidebar\" page template."
+msgstr " "
+
+#: functions.php:252
+msgid "Search Sidebar"
+msgstr " "
+
+#: functions.php:253
+msgid "The sidebar for the search form results page."
+msgstr " "
+
+#: functions.php:277
+#, php-format
+msgid "<cite class=\"fn\">%s</cite>"
+msgstr " "
+
+#: functions.php:278
+msgid "F jS, Y"
+msgstr " "
+
+#: functions.php:279
+msgid "(Edit)"
+msgstr " "
+
+#: functions.php:283
+msgid "Your comment is awaiting moderation."
+msgstr " "
+
+#: functions.php:314
+#: functions.php:322
+msgid "Logo"
+msgstr " "
+
+#: functions.php:329
+msgid "Text Color"
+msgstr " "
+
+#: functions.php:330
+msgid "Highlight Color"
+msgstr " "
+
+#: functions.php:331
+msgid "Background Color"
+msgstr " "
+
+#: functions.php:381
+msgid "Excerpts of the most recent posts"
+msgstr " "
+
+#: functions.php:382
+msgid "Recent Post Excerpts"
+msgstr " "
+
+#: functions.php:455
+msgid "Number of Posts:"
+msgstr " "
+
+#: functions.php:458
+msgid "Offset:"
+msgstr " "
+
+#: functions.php:460
+msgid "Omits the most recent post(s)."
+msgstr " "
+
+#: functions.php:464
+msgid "Link text:"
+msgstr " "
+
+#: functions.php:466
+msgid "Leave blank to omit."
+msgstr " "
+
+#: page-sidebar.php:28
+msgid "Tags:"
+msgstr " "
+
+#: search.php:6
+msgid "Search Results for:"
+msgstr " "
+
+#: search.php:23
+msgid "Read more &raquo;"
+msgstr " "
+
+#: search.php:48
+msgid "Sorry, but nothing was found. Please try searching again."
+msgstr " "
+
+#: sidebar.php:12
+msgid "Please activate some Widgets."
+msgstr " "

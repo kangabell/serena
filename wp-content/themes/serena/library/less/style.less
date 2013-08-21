@@ -1,0 +1,96 @@
+/******************************************************************
+
+Stylesheet: Main Stylesheet for Serena theme
+
+******************************************************************/
+
+/********* RESET *************************************************/
+
+@import "normalize.less";
+
+/* MIXINS */
+
+.clearfix {
+  zoom: 1;
+	&:before, &:after { content: ""; display: table; }
+	&:after { clear: both; }
+}
+
+@serif: "Adobe Caslon Pro", Palatino, "Times New Roman", serif;
+
+
+/*
+Palatino Small Caps Font
+License: Affiliated
+Copyright: 1993 Neil R. Manausa RIT Class of 1980 School of Printng
+*/
+
+@font-face { 
+	font-family: 'Palatino Small Caps';
+	src:url('../fonts/palatino_small_caps.eot');
+	src:url('../fonts/palatino_small_caps.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/palatino_small_caps.woff') format('woff'),
+		url('../fonts/palatino_small_caps.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+	font-variant: small-caps;
+}
+
+
+/*
+IcoMoon Icon Font - http://keyamoon.com/icomoon/
+License: CC BY 3.0 -- http://creativecommons.org/licenses/by/3.0/
+*/
+
+@font-face { 
+	font-family: 'icomoon';
+	src:url('../icons/icomoon.eot');
+	src:url('../icons/icomoon.eot?#iefix') format('embedded-opentype'),
+		url('../icons/icomoon.svg#icomoon') format('svg'),
+		url('../icons/icomoon.woff') format('woff'),
+		url('../icons/icomoon.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+/********* BASE STYLESHEET ***************************************/
+
+@import "base.less"; /* This is where almost everything is! */
+
+
+/********* 481px+ STYLESHEET *************************************/
+
+@media only screen and (min-width: 481px) {
+	html {
+		height: 101%; /* force vertical scrollbar for horizontal consistency */
+	}
+	.alignleft, img.alignleft { 
+		margin-right: 1.125em; 
+		display: inline; 
+		float: left;
+	}
+	.alignright, img.alignright { 
+		margin-left: 1.5em; 
+		display: inline; 
+		float: right;
+	}
+	.aligncenter, img.aligncenter { 
+		margin-right: auto; 
+		margin-left: auto; 
+		display: block; 
+		clear: both; 
+	}
+}
+
+/********* 768px+ STYLESHEET *************************************/
+
+@media only screen and (min-width: 768px) {
+	@import "768up.less";
+}
+
+/********* PRINT STYLESHEET **************************************/
+
+@media print {	
+	@import "print.less";	
+}
