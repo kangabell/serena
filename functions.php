@@ -123,6 +123,9 @@ function serena_scripts_and_styles() {
 
     // ie-only style sheet
     wp_register_style( 'serena-ie-only', get_stylesheet_directory_uri() . '/library/css/ie.css', array(), '' );
+	
+	// theme customizer styles
+	require get_template_directory() . '/library/custom-styles.php';
 
     // comment reply script for threaded comments
     if ( is_singular() AND comments_open() AND (get_option('thread_comments') == 1)) {
@@ -175,12 +178,6 @@ function serena_theme_support() {
 		)
 	);
 	
-	// custom header
-	add_theme_support('custom-header');
-
-	//custom background
-	add_theme_support('custom-background');
-		
 } /* end serena theme support */
 
 
@@ -202,18 +199,32 @@ function serena_main_nav() {
 	));
 } /* end serena main nav */
 
+
+/************* MODIFIED TITLE ********************/
+// makes a nicely formatted title to go in the head of the document
+
+function serena_wp_title( $title, $sep ) {
+	global $paged, $page;
+
+	if ( is_feed() )
+		return $title;
+
+	// Add the site name.
+	$title .= get_bloginfo( 'name' );
+
+	// Add the site description for the home/front page.
+	$site_description = get_bloginfo( 'description', 'display' );
+	if ( $site_description && ( is_home() || is_front_page() ) )
+		$title = "$title $sep $site_description";
+
+	return $title;
+}
+add_filter( 'wp_title', 'serena_wp_title', 10, 2 );
+
+
 /************* ACTIVE SIDEBARS ********************/
 
 function serena_register_sidebars() {
-    register_sidebar(array(
-    	'id' => 'sidebar_home',
-    	'name' => __('Homepage Sidebar', 'serena'),
-    	'description' => __('The widget area for the homepage.', 'serena'),
-    	'before_widget' => '<div id="%1$s" class="widget %2$s">',
-    	'after_widget' => '</div>',
-    	'before_title' => '<h4 class="widgettitle">',
-    	'after_title' => '</h4>',
-    ));
     register_sidebar(array(
     	'id' => 'sidebar_blog',
     	'name' => __('Blog Sidebar', 'serena'),
@@ -301,7 +312,8 @@ function serena_customize_register( $wp_customize )
 	    'description' => 'Upload a logo to replace the default site name and description in the header',
 	) );
 	
-	$wp_customize->add_setting( 'serena_logo' );
+	$wp_customize->add_setting( 'serena_logo', array(
+		'sanitize_callback' => 'sanitize_file_name' ));
 	
 	$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'serena_logo', array(
 	    'label'    => __( 'Logo', 'serena' ),
@@ -317,7 +329,11 @@ function serena_customize_register( $wp_customize )
 
 	  foreach($colors as $color)
 	  {
-	    $wp_customize->add_setting( $color['slug'], array( 'default' => $color['default'], 'type' => 'option', 'capability' => 'edit_theme_options' ));
+	    $wp_customize->add_setting( $color['slug'], array( 
+	    	'default' => $color['default'], 
+	    	'type' => 'option', 
+	    	'capability' => 'edit_theme_options', 
+	    	'sanitize_callback' => 'sanitize_hex_color' ));
 
 	    $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, $color['slug'], array( 
 			'label' => $color['label'], 
@@ -355,7 +371,6 @@ add_action( 'customize_register', 'serena_customize_register' );
 
 	    return '#'.$r_hex.$g_hex.$b_hex;
 	}
-
 
 /************* RECENT POST EXCERPTS WIDGET *****************/
 /* (based on "Recent Post with Excerpts" plugin by Stephanie Leary) */

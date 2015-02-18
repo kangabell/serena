@@ -146,14 +146,65 @@ h6, .h6 {
 
 /* MEDIA */
 
-img, video, object {
+img {
 	max-width: 100%;
 	height: auto;
-}
-
-img {
 	margin: 0 0 1.5em 0;
 }
+
+embed,
+iframe,
+object,
+video {
+        max-width: 100%;
+        max-height: 450px;
+}
+
+/* image gallery */
+.gallery {
+	dl {
+		float: left;
+		width: 150px;
+		margin-right: 22px;
+		img {
+			margin-bottom: 0;
+		}
+	}
+	dd { /* caption */
+		line-height: 1.25em;
+		color: lighten(black, 40%);
+		margin-bottom: 0;
+	}
+} 
+.image-nav {
+	text-align: center;
+	li {
+		display: inline;
+		padding-top: 4px;
+		border-top: 1px solid lighten(black, 60%);
+		text-transform: lowercase;
+	}
+		.prev-link {
+			float: left;
+		}
+		.next-link {
+			float: right;
+		}
+}
+	
+/* tables */
+td {
+	border-right: 1px solid darken(white, 10%);
+	padding: 0 8px;
+	line-height: 1.75em;
+	&:last-child {
+		border-right: 0;
+	}
+}
+tr:nth-child(2n+1) { 
+	background-color: darken(white, 5%);  
+}
+
 
 /*********************
 HEADER

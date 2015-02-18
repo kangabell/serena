@@ -26,7 +26,7 @@
 						
 							<footer class="article-footer">
 								<?php wp_link_pages(); ?>
-								<?php the_tags('<p class="tags"><span class="tags-title">' . __('Tags:', 'bonestheme') . '</span> ', ', ', '</p>'); ?>
+								<?php the_tags('<p class="tags"><span class="tags-title">' . __('Tags:', 'serena') . '</span> ', ', ', '</p>'); ?>
 								<div class="post-link">
 									<?php 
 										previous_post_link('%link', 'prev'); 
@@ -51,7 +51,7 @@
 				        	    <p><?php _e("Sorry, but something is missing. Please try again!", "serena"); ?></p>
 				        	</section>
 				        	<footer class="article-footer">
-								<p><?php _e("This is the error message in the single.php template.", "bonestheme"); ?></p>
+								<p><?php _e("This is the error message in the single.php template.", "serena"); ?></p>
 				        	</footer>
 				        </article>	
 					

@@ -21,6 +21,8 @@
 			        	<footer class="article-footer">
 							<?php wp_link_pages(); ?>
 			        	</footer>
+						
+						<?php comments_template(); ?>
 					
 				    </article> <!-- end article -->
 					
