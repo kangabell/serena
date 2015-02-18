@@ -31,6 +31,9 @@ Chris Coyier & CSS Tricks: http://css-tricks.com/
 
 ******************************************************************/
 
+/* v1.5.2 update */
+- fix incorrect file paths in Getting Started
+
 /* v1.5.1 update */
 
 - added comments template to page templates.
