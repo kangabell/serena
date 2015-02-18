@@ -9,7 +9,7 @@
 		<meta charset="<?php bloginfo('charset'); ?>">
 		
 		<title>
-			<?php bloginfo('name'); ?> / <?php is_front_page() ? bloginfo('description') : wp_title(''); ?>
+			<?php wp_title('/', true, 'right'); ?>
 		</title>
 		
 		<!-- mobile meta -->
@@ -22,6 +22,7 @@
 		
 		<!-- wordpress head functions -->
 		<?php wp_head(); ?>
+
 		
 	</head>
 	
@@ -33,9 +34,9 @@
 				<div id="inner-header">
 					<p id="logo" class="h1">
 						<?php if(get_theme_mod( 'serena_logo' )) : ?>				
-							<a href="<?php echo home_url(); ?>" rel="nofollow"><img src="<?php echo get_theme_mod( 'serena_logo' ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"></a>
+							<a href="<?php echo esc_url(home_url('/')); ?>" rel="nofollow"><img src="<?php echo get_theme_mod( 'serena_logo' ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"></a>
 						<?php else : ?>				
-							<a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a>				
+							<a href="<?php echo esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a>				
 						<?php endif; ?>	
 						
 						

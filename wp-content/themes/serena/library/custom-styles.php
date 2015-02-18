@@ -1,11 +1,12 @@
 <!-- THEME CUSTOMIZER OPTIONS -->
 
-<?php 
-	$text_color = get_option('text_color'); 
-	$highlight_color = get_option('highlight_color');
-	$bg_color = get_option('bg_color');
-?>
-		
+<?php function serena_custom_css() { 
+        $text_color = get_option('text_color'); 
+        $highlight_color = get_option('highlight_color');
+        $bg_color = get_option('bg_color');
+
+?>              
+
 <style> 
 		
 	body { 
@@ -39,4 +40,7 @@
 	}
 			
 </style>
-		
+
+<?php }
+	add_action('wp_head', 'serena_custom_css');
+?>

@@ -26,9 +26,10 @@ Template Name: w/Sidebar
 						
 					    <footer class="article-footer">
 							<?php wp_link_pages(); ?>
-             			   	<?php the_tags('<span class="tags">' . __('Tags:', 'bonestheme') . '</span> ', ', ', ''); ?>
-							
+             			   	<?php the_tags('<span class="tags">' . __('Tags:', 'serena') . '</span> ', ', ', ''); ?>
 					    </footer> <!-- end article footer -->
+						
+						<?php comments_template(); ?>
 					
 				    </article> <!-- end article -->
 					

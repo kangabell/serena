@@ -362,11 +362,6 @@ table {
 .clearfix:after {
   clear: both;
 }
-/*
-Palatino Small Caps Font
-License: Affiliated
-Copyright: 1993 Neil R. Manausa RIT Class of 1980 School of Printng
-*/
 @font-face {
   font-family: 'Palatino Small Caps';
   src: url('../fonts/palatino_small_caps.eot');
@@ -375,10 +370,6 @@ Copyright: 1993 Neil R. Manausa RIT Class of 1980 School of Printng
   font-style: normal;
   font-variant: small-caps;
 }
-/*
-IcoMoon Icon Font - http://keyamoon.com/icomoon/
-License: CC BY 3.0 -- http://creativecommons.org/licenses/by/3.0/
-*/
 @font-face {
   font-family: 'icomoon';
   src: url('../icons/icomoon.eot');
@@ -532,14 +523,60 @@ h6,
   font-style: italic;
 }
 /* MEDIA */
-img,
-video,
-object {
+img {
   max-width: 100%;
   height: auto;
-}
-img {
   margin: 0 0 1.5em 0;
+}
+embed,
+iframe,
+object,
+video {
+  max-width: 100%;
+  max-height: 450px;
+}
+/* image gallery */
+.gallery dl {
+  float: left;
+  width: 150px;
+  margin-right: 22px;
+}
+.gallery dl img {
+  margin-bottom: 0;
+}
+.gallery dd {
+  /* caption */
+
+  line-height: 1.25em;
+  color: #666666;
+  margin-bottom: 0;
+}
+.image-nav {
+  text-align: center;
+}
+.image-nav li {
+  display: inline;
+  padding-top: 4px;
+  border-top: 1px solid #999999;
+  text-transform: lowercase;
+}
+.image-nav .prev-link {
+  float: left;
+}
+.image-nav .next-link {
+  float: right;
+}
+/* tables */
+td {
+  border-right: 1px solid #e6e6e6;
+  padding: 0 8px;
+  line-height: 1.75em;
+}
+td:last-child {
+  border-right: 0;
+}
+tr:nth-child(2n+1) {
+  background-color: #f2f2f2;
 }
 /*********************
 HEADER

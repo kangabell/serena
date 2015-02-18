@@ -40,75 +40,63 @@ The comments section for Serena
 		</ul>
 	</nav>
 
-	<?php else : // this is displayed if there are no comments so far ?>
-
-	<?php if ( comments_open() ) : ?>
-			<!-- If comments are open, but there are no comments. -->
-
-	<?php else : // comments are closed ?>
-
-	<!-- If comments are closed. -->
-	<p class="nocomments"><?php _e("Comments are closed.", "serena"); ?></p>
-
-	<?php endif; ?>
-
 <?php endif; ?>
 
 
 	
 <?php if ( comments_open() ) : ?>
-<section id="respond" class="respond-form">
+	<section id="respond" class="respond-form">
 		
-	<?php
+		<?php
 	
-		comment_form(
-			array(
-			    'comment_notes_after'  => '',
-			    'title_reply'          => '<h3 id="comment-form-title" class="h2">Leave a Reply</h3>',
-			    'label_submit'         => __( 'Submit', 'serena' ),
+			comment_form(
+				array(
+				    'comment_notes_after'  => '',
+				    'title_reply'          => '<h3 id="comment-form-title" class="h2">Leave a Reply</h3>',
+				    'label_submit'         => __( 'Submit', 'serena' ),
 			
-			    'logged_in_as' => '<p class="comments-logged-in-as">' .
-			       sprintf(
-			       __( 'Logged in as <a href="%1$s">%2$s</a>. <a href="%3$s" title="Log out of this account">Log out &raquo;</a>' ),
-			         admin_url( 'profile.php' ),
-			         $user_identity,
-			         wp_logout_url( apply_filters( 'the_permalink', get_permalink( ) ) )
-			       ) . '</p>',
+				    'logged_in_as' => '<p class="comments-logged-in-as">' .
+				       sprintf(
+				       __( 'Logged in as <a href="%1$s">%2$s</a>. <a href="%3$s" title="Log out of this account">Log out &raquo;</a>' ),
+				         admin_url( 'profile.php' ),
+				         $user_identity,
+				         wp_logout_url( apply_filters( 'the_permalink', get_permalink( ) ) )
+				       ) . '</p>',
 		   
-			     'comment_field' =>  '<p class="comment-form-comment"><textarea name="comment" id="comment" placeholder="Thoughts" tabindex="4"></textarea></p>',
+				     'comment_field' =>  '<p class="comment-form-comment"><textarea name="comment" id="comment" placeholder="Thoughts" tabindex="4"></textarea></p>',
 			 
-				 'comment_notes_before' => '<ul id="comment-form-elements" class="clearfix">',
+					 'comment_notes_before' => '<ul id="comment-form-elements" class="clearfix">',
 
-				  'comment_notes_after' => '</ul>',
+					  'comment_notes_after' => '</ul>',
 				
 				 
-				 'fields' => apply_filters( 'comment_form_default_fields', array(
+					 'fields' => apply_filters( 'comment_form_default_fields', array(
    	   			    
-						'author' =>
-	   	   			      '<li class="comment-form-author">' .
-	   	   			      '<input id="author" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) .
-	   	   			      '" placeholder="' . __( 'Name *', 'serena' ) .
-	   	   			      '" size="30" /></li>',
+							'author' =>
+		   	   			      '<li class="comment-form-author">' .
+		   	   			      '<input id="author" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) .
+		   	   			      '" placeholder="' . __( 'Name *', 'serena' ) .
+		   	   			      '" size="30" /></li>',
 					
-		   			    'email' =>
-		   			      '<li class="comment-form-email">' .
-		   			      '<input id="email" name="email" type="text" value="' . esc_attr( $commenter['comment_author_email'] ) .
-		   			      '" placeholder="' . __( 'Email *', 'serena' ) .
-		   			      '" size="30" /></li>',
+			   			    'email' =>
+			   			      '<li class="comment-form-email">' .
+			   			      '<input id="email" name="email" type="text" value="' . esc_attr( $commenter['comment_author_email'] ) .
+			   			      '" placeholder="' . __( 'Email *', 'serena' ) .
+			   			      '" size="30" /></li>',
 
-					    'url' =>
-					      '<li class="comment-form-url">' .
-					      '<input id="url" name="url" type="text" value="' . esc_attr( $commenter['comment_author_url'] ) .
-					      '" placeholder="' . __( 'URL', 'serena' ) .
-					      '" size="30" /></li>',
+						    'url' =>
+						      '<li class="comment-form-url">' .
+						      '<input id="url" name="url" type="text" value="' . esc_attr( $commenter['comment_author_url'] ) .
+						      '" placeholder="' . __( 'URL', 'serena' ) .
+						      '" size="30" /></li>',
 				
-					) // end array
+						) // end array
 						
-				  ), //end apply_filters
+					  ), //end apply_filters
 				 
-			) // end array
-		); // end comment_form
+				) // end array
+			); // end comment_form
 
-	?>
-</section>
+		?>
+	</section>
 <?php endif; ?>
