@@ -7,7 +7,7 @@ Check out the live preview at http://web.kangabell.com/serena
 
 For setup instructions, visit the included GettingStarted.html
 
-Serena WordPress theme, Copyright (C) 2013 Kanga Bell.
+Serena WordPress theme, Copyright (C) 2015 Kanga Bell Co.
 Theme URI: https://github.com/kangabell/serena
 
 Serena WordPress theme is licensed under the GPL.
@@ -27,6 +27,8 @@ IcoMoon Icon Font - http://keyamoon.com/icomoon/
 License: CC BY 3.0 -- http://creativecommons.org/licenses/by/3.0/
 
 Chris Coyier & CSS Tricks: http://css-tricks.com/
+
+Felix Wolters: http://felix-wolters.com/
 
 
 ******************************************************************/
