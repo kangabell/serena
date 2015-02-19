@@ -31,6 +31,9 @@ Chris Coyier & CSS Tricks: http://css-tricks.com/
 
 ******************************************************************/
 
+/* v1.6 update */
+- added german/deutsch translation. thanks to the help of Felix Wolters!
+
 /* v1.5.2 update */
 - fix incorrect file paths in Getting Started
 

@@ -1,0 +1,273 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Serena 1.6\n"
+"POT-Creation-Date: 2013-03-10 16:23-0500\n"
+"PO-Revision-Date: 2015-02-19 15:12-0500\n"
+"Last-Translator: \n"
+"Language-Team: Kanga Bell Co. <k@kangabell.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.7.4\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;_e;__\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: de\n"
+
+#: 404.php:11
+msgid "Page Missing"
+msgstr "Nicht Gefunden"
+
+#: 404.php:17
+msgid "Sorry, but nothing was found here.<br /> Maybe try a search?"
+msgstr ""
+"Die angeforderte Seite existiert leider nicht.<br />Vielleicht starten Sie "
+"eine Suche?"
+
+#: archive.php:14
+msgid "Posts Tagged:"
+msgstr "Beiträge mit dem Schlagwort:"
+
+#: archive.php:23
+msgid "Posts By:"
+msgstr "Beiträge von:"
+
+#: archive.php:28 archive.php:33 archive.php:38
+msgid "Archives:"
+msgstr "Archiv:"
+
+#: archive.php:50 search.php:16
+#, php-format
+msgid ""
+"by <span class=\"author\">%3$s</span>, <time class=\"updated\" datetime="
+"\"%1$s\" pubdate>%2$s</time>"
+msgstr "<time datetime=\"%1$s\" pubdate>%2$s</time> &middot; von %3$s"
+
+#: archive.php:71 blog.php:47 search.php:37
+msgid "&laquo; Older"
+msgstr "&laquo; ältere Beiträge"
+
+#: archive.php:72 blog.php:48 search.php:38
+msgid "Newer &raquo;"
+msgstr "neuere Beiträge &raquo;"
+
+#: archive.php:80 blog.php:56 page-sidebar.php:38 page.php:33 single.php:40
+msgid "Article Missing"
+msgstr "Artikel nicht vorhanden"
+
+#: archive.php:83 blog.php:59 page-sidebar.php:41 page.php:36 single.php:43
+msgid "Sorry, but something is missing. Please try again!"
+msgstr ""
+"Verzeihung, es ist ein Fehler aufgetreten! Bitte versuchen Sie es erneut!"
+
+#: blog.php:23 functions.php:404 index.php:13 single.php:13
+#, php-format
+msgid "<time datetime=\"%1$s\" pubdate>%2$s</time>"
+msgstr "<time datetime=\"%1$s\" pubdate>%2$s</time>"
+
+#: blog.php:27 index.php:17 single.php:17
+#, php-format
+msgid "by %1$s"
+msgstr "von %1$s"
+
+#: comments.php:15
+msgid "This post is password protected. Enter the password to view comments."
+msgstr ""
+"Dieser Beitrag ist durch ein Passwort geschützt. Geben Sie das Passwort, "
+"um alle Kommentare anzuzeigen."
+
+#: comments.php:25
+msgid "Comments"
+msgstr "Kommentare"
+
+#: comments.php:39
+msgid "Comments are closed."
+msgstr "Kommentare sind geschlossen."
+
+#: comments.php:52
+msgid "Leave a Comment"
+msgstr "Hinterlasse einen Kommentar"
+
+#: comments.php:52
+#, php-format
+msgid "Leave a Comment for %s"
+msgstr "Hinterlasse einen Kommentar zu %s"
+
+#: comments.php:62
+#, php-format
+msgid "You must be %1$slogged in%2$s to post a comment."
+msgstr "Sie müssen %1$seingeloggt sein%2$s, um einen Kommentar abzugeben."
+
+#: comments.php:70
+msgid "Logged in as"
+msgstr "Angemeldet als"
+
+#: comments.php:70
+msgid "Log out of this account"
+msgstr "Diesen Benutzer abmelden"
+
+#: comments.php:70
+msgid "Log out"
+msgstr "Abmelden"
+
+#: comments.php:70
+msgid "&raquo;"
+msgstr "&raquo;"
+
+#: comments.php:77
+msgid "Name"
+msgstr "Name"
+
+#: comments.php:77 comments.php:82
+msgid "(required)"
+msgstr "(erforderlich)"
+
+#: comments.php:78
+msgid "Name *"
+msgstr "Name *"
+
+#: comments.php:82
+msgid "Mail"
+msgstr ""
+
+#: comments.php:83
+msgid "E-Mail *"
+msgstr "E-Mail *"
+
+#: comments.php:84
+msgid "(will not be published)"
+msgstr ""
+
+#: comments.php:88
+msgid "Website"
+msgstr "Webseite"
+
+#: comments.php:89
+msgid "Website URL"
+msgstr "Webseite URL"
+
+#: comments.php:99
+msgid "&#8618;"
+msgstr "&#8618;"
+
+#: functions.php:125
+#, php-format
+msgid "Posts by %s"
+msgstr "Archiv des Autors: %s"
+
+#: functions.php:196 functions.php:212
+msgid "The Main Menu"
+msgstr "Hauptmenü (Primäres Menü)"
+
+#: functions.php:225
+msgid "Homepage Sidebar"
+msgstr "Homepage Sidebar"
+
+#: functions.php:226
+msgid "The widget area for the homepage."
+msgstr "Das Widget Bereich für die Homepage."
+
+#: functions.php:234
+msgid "Sidebar"
+msgstr "Sidebar"
+
+#: functions.php:235
+msgid "The widget area for the homepage & blog pages."
+msgstr "Das Widget Bereich für die Homepage und Blog-Seiten."
+
+#: functions.php:243
+msgid "Page Sidebar"
+msgstr "Seite Sidebar"
+
+#: functions.php:244
+msgid "The sidebar for the \"w/Sidebar\" page template."
+msgstr "Die Seitenleiste für die \"w/Sidebar\" Seitenvorlage."
+
+#: functions.php:252
+msgid "Search Sidebar"
+msgstr "Suche Sidebar"
+
+#: functions.php:253
+msgid "The sidebar for the search form results page."
+msgstr "Die Seitenleiste für die Suche Ergebnisseite."
+
+#: functions.php:277
+#, php-format
+msgid "<cite class=\"fn\">%s</cite>"
+msgstr "<cite class=\"fn\">%s</cite>"
+
+#: functions.php:278
+msgid "F jS, Y"
+msgstr "j F, Y"
+
+#: functions.php:279
+msgid "(Edit)"
+msgstr "(bearbeiten)"
+
+#: functions.php:283
+msgid "Your comment is awaiting moderation."
+msgstr "Ihr Kommentar wartet auf Moderation."
+
+#: functions.php:314 functions.php:322
+msgid "Logo"
+msgstr "Logo"
+
+#: functions.php:329
+msgid "Text Color"
+msgstr "Textfarbe"
+
+#: functions.php:330
+msgid "Highlight Color"
+msgstr "Markierungsfarbe"
+
+#: functions.php:331
+msgid "Background Color"
+msgstr "Hintergrundfarbe"
+
+#: functions.php:381
+msgid "Excerpts of the most recent posts"
+msgstr "Auszüge der neuesten Beiträge"
+
+#: functions.php:382
+msgid "Recent Post Excerpts"
+msgstr "Aktuellster Beitrag Auszüge"
+
+#: functions.php:455
+msgid "Number of Posts:"
+msgstr "Anzahl der Beiträge:"
+
+#: functions.php:458
+msgid "Offset:"
+msgstr "Offsetdruck:"
+
+#: functions.php:460
+msgid "Omits the most recent post(s)."
+msgstr "Lässt die neuesten Beiträge."
+
+#: functions.php:464
+msgid "Link text:"
+msgstr "Link text:"
+
+#: functions.php:466
+msgid "Leave blank to omit."
+msgstr "Leer lassen, zu unterlassen."
+
+#: page-sidebar.php:28
+msgid "Tags:"
+msgstr "Schlagwörter:"
+
+#: search.php:6
+msgid "Search Results for:"
+msgstr "Suchergebnisse für:"
+
+#: search.php:23
+msgid "Read more &raquo;"
+msgstr "ausführlicher Beitrag &raquo;"
+
+#: search.php:48
+msgid "Sorry, but nothing was found. Please try searching again."
+msgstr "Zu Ihrer Suchanfrage konnte leider nichts gefunden werden."
+
+#: sidebar.php:12
+msgid "Please activate some Widgets."
+msgstr "Bitte aktivieren Sie einige Widgets."
