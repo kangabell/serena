@@ -30,8 +30,14 @@ Chris Coyier & CSS Tricks: http://css-tricks.com/
 
 Felix Wolters: http://felix-wolters.com/
 
+Andreas Ribbefjord: @ribbefjord
+
 
 ******************************************************************/
+
+/* v1.7 update */
+- fixed broken logo upload.
+- added swedish/svensk translation. thank you, Andreas Ribbefjord!
 
 /* v1.6 update */
 - added german/deutsch translation. thanks to the help of Felix Wolters!
