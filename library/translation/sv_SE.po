@@ -1,0 +1,271 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Serena 1.0\n"
+"POT-Creation-Date: 2013-03-10 16:23-0500\n"
+"PO-Revision-Date: 2015-08-17 22:44+0200\n"
+"Last-Translator: \n"
+"Language-Team: Kanga Bell Co. <k@kangabell.com>\n"
+"Language: sv\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.4\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;_e;__\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: 404.php:11
+msgid "Page Missing"
+msgstr " Sidan saknas"
+
+#: 404.php:17
+msgid "Sorry, but nothing was found here.<br /> Maybe try a search?"
+msgstr ""
+"Beklagar, men här finns ingenting.<br /> Du kanske vill prova att söka?"
+
+#: archive.php:14
+msgid "Posts Tagged:"
+msgstr "Taggade inlägg:"
+
+#: archive.php:23
+msgid "Posts By:"
+msgstr " Inlägg av:"
+
+#: archive.php:28 archive.php:33 archive.php:38
+msgid "Archives:"
+msgstr " Arkiv:"
+
+#: archive.php:50 search.php:16
+#, php-format
+msgid ""
+"by <span class=\"author\">%3$s</span>, <time class=\"updated\" datetime="
+"\"%1$s\" pubdate>%2$s</time>"
+msgstr ""
+"av <span class=\"author\">%3$s</span> <time class=\"updated\" datetime="
+"\"%1$s\" pubdate>%2$s</time>"
+
+#: archive.php:71 blog.php:47 search.php:37
+msgid "&laquo; Older"
+msgstr " &laquo; Äldre"
+
+#: archive.php:72 blog.php:48 search.php:38
+msgid "Newer &raquo;"
+msgstr " Nyare &raquo;"
+
+#: archive.php:80 blog.php:56 page-sidebar.php:38 page.php:33 single.php:40
+msgid "Article Missing"
+msgstr "Artikeln saknas"
+
+#: archive.php:83 blog.php:59 page-sidebar.php:41 page.php:36 single.php:43
+msgid "Sorry, but something is missing. Please try again!"
+msgstr "Vi ber om ursäkt, men något gick fel. Försök igen!"
+
+#: blog.php:23 functions.php:404 index.php:13 single.php:13
+#, php-format
+msgid "<time datetime=\"%1$s\" pubdate>%2$s</time>"
+msgstr " <time datetime=\"%1$s\" pubdate>%2$s</time>"
+
+#: blog.php:27 index.php:17 single.php:17
+#, php-format
+msgid "by %1$s"
+msgstr " av %1$s"
+
+#: comments.php:15
+msgid "This post is password protected. Enter the password to view comments."
+msgstr "Detta är ett skyddat inlägg. Ange lösenord för att se kommentarer."
+
+#: comments.php:25
+msgid "Comments"
+msgstr "Kommentarer"
+
+#: comments.php:39
+msgid "Comments are closed."
+msgstr "Kommentering är avstängd."
+
+#: comments.php:52
+msgid "Leave a Comment"
+msgstr "Skriv en kommentar"
+
+#: comments.php:52
+#, php-format
+msgid "Leave a Comment for %s"
+msgstr "Skriv en kommentar till %s"
+
+#: comments.php:62
+#, php-format
+msgid "You must be %1$slogged in%2$s to post a comment."
+msgstr "Du måste vara %1$sinloggad%2$s för att kommentera."
+
+#: comments.php:70
+msgid "Logged in as"
+msgstr "Inloggad som"
+
+#: comments.php:70
+msgid "Log out of this account"
+msgstr "Logga ut från detta konto"
+
+#: comments.php:70
+msgid "Log out"
+msgstr "Logga ut"
+
+#: comments.php:70
+msgid "&raquo;"
+msgstr " &raquo;"
+
+#: comments.php:77
+msgid "Name"
+msgstr "Namn"
+
+#: comments.php:77 comments.php:82
+msgid "(required)"
+msgstr "(obligatoriskt)"
+
+#: comments.php:78
+msgid "Name *"
+msgstr "Namn *"
+
+#: comments.php:82
+msgid "Mail"
+msgstr "Epost"
+
+#: comments.php:83
+msgid "E-Mail *"
+msgstr "Epost *"
+
+#: comments.php:84
+msgid "(will not be published)"
+msgstr "(kommer inte att publiceras)"
+
+#: comments.php:88
+msgid "Website"
+msgstr "Webbplats"
+
+#: comments.php:89
+msgid "Website URL"
+msgstr "URL till webbplats"
+
+#: comments.php:99
+msgid "&#8618;"
+msgstr "&#8618;"
+
+#: functions.php:125
+#, php-format
+msgid "Posts by %s"
+msgstr "Inlägg av %s"
+
+#: functions.php:196 functions.php:212
+msgid "The Main Menu"
+msgstr "Huvudmenyn"
+
+#: functions.php:225
+msgid "Homepage Sidebar"
+msgstr "Starsidans sidoyta"
+
+#: functions.php:226
+msgid "The widget area for the homepage."
+msgstr "Startsidans widget-yta"
+
+#: functions.php:234
+msgid "Sidebar"
+msgstr "Sidoytan"
+
+#: functions.php:235
+msgid "The widget area for the homepage & blog pages."
+msgstr "Widget-ytan för startsidan och bloggsidor."
+
+#: functions.php:243
+msgid "Page Sidebar"
+msgstr "Sidoyta är sidor"
+
+#: functions.php:244
+msgid "The sidebar for the \"w/Sidebar\" page template."
+msgstr "Sidoyta för sidor av typen \"w/Sidebar\"."
+
+#: functions.php:252
+msgid "Search Sidebar"
+msgstr "Sidoyta för sökning"
+
+#: functions.php:253
+msgid "The sidebar for the search form results page."
+msgstr "Sidoytan för sökresultatsidan."
+
+#: functions.php:277
+#, php-format
+msgid "<cite class=\"fn\">%s</cite>"
+msgstr "<cite class=\"fn\">%s</cite>"
+
+#: functions.php:278
+msgid "F jS, Y"
+msgstr "Y-jS-F"
+
+#: functions.php:279
+msgid "(Edit)"
+msgstr "(Redigera)"
+
+#: functions.php:283
+msgid "Your comment is awaiting moderation."
+msgstr "Din kommentar har inte modererats än."
+
+#: functions.php:314 functions.php:322
+msgid "Logo"
+msgstr "Logo"
+
+#: functions.php:329
+msgid "Text Color"
+msgstr "Textfärg"
+
+#: functions.php:330
+msgid "Highlight Color"
+msgstr "Markeringsfärg"
+
+#: functions.php:331
+msgid "Background Color"
+msgstr "Bakgrundsfärg"
+
+#: functions.php:381
+msgid "Excerpts of the most recent posts"
+msgstr "Utdrag från de senaste inläggen"
+
+#: functions.php:382
+msgid "Recent Post Excerpts"
+msgstr "Utdrag från senaste inlägg"
+
+#: functions.php:455
+msgid "Number of Posts:"
+msgstr "Antal inlägg:"
+
+#: functions.php:458
+msgid "Offset:"
+msgstr "Offset:"
+
+#: functions.php:460
+msgid "Omits the most recent post(s)."
+msgstr "Hoppar över senaste inlägg(en)."
+
+#: functions.php:464
+msgid "Link text:"
+msgstr "Länktext:"
+
+#: functions.php:466
+msgid "Leave blank to omit."
+msgstr "Fyller du inte i något så utelämnas det."
+
+#: page-sidebar.php:28
+msgid "Tags:"
+msgstr "Taggar:"
+
+#: search.php:6
+msgid "Search Results for:"
+msgstr "Sökresultat för:"
+
+#: search.php:23
+msgid "Read more &raquo;"
+msgstr " Läs mer &raquo;"
+
+#: search.php:48
+msgid "Sorry, but nothing was found. Please try searching again."
+msgstr "Tyvärr hittades inget. Vänligen sök igen."
+
+#: sidebar.php:12
+msgid "Please activate some Widgets."
+msgstr "Vänligen aktivera någon widget."
