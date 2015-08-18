@@ -312,8 +312,7 @@ function serena_customize_register( $wp_customize )
 	    'description' => 'Upload a logo to replace the default site name and description in the header',
 	) );
 	
-	$wp_customize->add_setting( 'serena_logo', array(
-		'sanitize_callback' => 'sanitize_file_name' ));
+	$wp_customize->add_setting( 'serena_logo' );
 	
 	$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'serena_logo', array(
 	    'label'    => __( 'Logo', 'serena' ),
