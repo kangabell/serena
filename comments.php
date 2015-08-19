@@ -57,7 +57,7 @@ The comments section for Serena
 			
 				    'logged_in_as' => '<p class="comments-logged-in-as">' .
 				       sprintf(
-				       __( 'Logged in as <a href="%1$s">%2$s</a>. <a href="%3$s" title="Log out of this account">Log out &raquo;</a>' ),
+				       __( 'Logged in as <a href="%1$s">%2$s</a>. <a href="%3$s" title="Log out of this account">Log out &raquo;</a>', 'serena' ),
 				         admin_url( 'profile.php' ),
 				         $user_identity,
 				         wp_logout_url( apply_filters( 'the_permalink', get_permalink( ) ) )
