@@ -380,7 +380,7 @@ class RecentPostExcerpts extends WP_Widget {
 
 	function RecentPostExcerpts() {
 			$widget_ops = array('classname' => 'recent_with_excerpt', 'description' => __( 'Excerpts of the most recent posts', 'serena') );
-			$this->WP_Widget('RecentPostExcerpts', __('Recent Post Excerpts', 'serena'), $widget_ops);
+			$this->__construct('RecentPostExcerpts', __('Recent Post Excerpts', 'serena'), $widget_ops);
 	}
 	
 	function widget( $args, $instance ) {
