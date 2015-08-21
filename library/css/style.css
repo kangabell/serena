@@ -58,11 +58,10 @@ audio:not([controls]) {
 html {
   font-family: sans-serif;
   /* 1 */
-
   -webkit-text-size-adjust: 100%;
+  /* 2 */
   -ms-text-size-adjust: 100%;
   /* 2 */
-
 }
 /**
  * Remove default margin.
@@ -217,10 +216,8 @@ fieldset {
 legend {
   border: 0;
   /* 1 */
-
   padding: 0;
   /* 2 */
-
 }
 /**
  * 1. Correct font family not being inherited in all browsers.
@@ -233,13 +230,10 @@ select,
 textarea {
   font-family: inherit;
   /* 1 */
-
   font-size: 100%;
   /* 2 */
-
   margin: 0;
   /* 3 */
-
 }
 /**
  * Address Firefox 4+ setting `line-height` on `input` using `!important` in
@@ -272,10 +266,8 @@ input[type="reset"],
 input[type="submit"] {
   -webkit-appearance: button;
   /* 2 */
-
   cursor: pointer;
   /* 3 */
-
 }
 /**
  * Re-set default cursor for disabled elements.
@@ -292,10 +284,8 @@ input[type="checkbox"],
 input[type="radio"] {
   box-sizing: border-box;
   /* 1 */
-
   padding: 0;
   /* 2 */
-
 }
 /**
  * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
@@ -305,11 +295,9 @@ input[type="radio"] {
 input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
-
   -moz-box-sizing: content-box;
   -webkit-box-sizing: content-box;
   /* 2 */
-
   box-sizing: content-box;
 }
 /**
@@ -335,10 +323,8 @@ input::-moz-focus-inner {
 textarea {
   overflow: auto;
   /* 1 */
-
   vertical-align: top;
   /* 2 */
-
 }
 /* ==========================================================================
    Tables
@@ -406,7 +392,6 @@ body {
   line-height: 1.45em;
   word-wrap: break-word;
   /* for very long words */
-
   -ms-word-wrap: break-word;
 }
 * {
@@ -465,7 +450,6 @@ input[type="submit"]:hover {
 }
 a:link {
   /* for iphones/ipads */
-
   -webkit-tap-highlight-color: #457ABD;
 }
 li.current-menu-item a:hover,
@@ -546,7 +530,6 @@ video {
 }
 .gallery dd {
   /* caption */
-
   line-height: 1.25em;
   color: #666666;
   margin-bottom: 0;
@@ -577,6 +560,34 @@ td:last-child {
 }
 tr:nth-child(2n+1) {
   background-color: #f2f2f2;
+}
+/* TEXT FOR SCREEN READERS */
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+.screen-reader-text:focus {
+  background-color: #f1f1f1;
+  border-radius: 3px;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+  clip: auto !important;
+  color: #21759b;
+  display: block;
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: bold;
+  height: auto;
+  left: 5px;
+  line-height: normal;
+  padding: 15px 23px 14px;
+  text-decoration: none;
+  top: 5px;
+  width: auto;
+  z-index: 100000;
+  /* Above WP toolbar. */
 }
 /*********************
 HEADER
@@ -649,7 +660,6 @@ form textarea {
   border: 1px solid #666666;
   line-height: 1.5em;
   /* form validation */
-
 }
 form input[type=text]:focus,
 form input[type=email]:focus,
@@ -768,7 +778,6 @@ blockquote p:first-child:first-line {
 /* PAGINATION */
 .wp-prev-next {
   /* on blog/archive pages */
-
   text-align: center;
 }
 .wp-prev-next li {
@@ -784,7 +793,6 @@ blockquote p:first-child:first-line {
 }
 .post-link {
   /* on single post pages */
-
   padding: 1em 0;
 }
 .post-link a[rel="prev"] {
@@ -813,7 +821,6 @@ COMMENTS
   list-style-type: none;
   margin-left: 0;
   /* comment reply link */
-
 }
 .commentlist li {
   position: relative;
@@ -821,7 +828,6 @@ COMMENTS
 }
 .commentlist li ul.children {
   /* required WP class */
-
 }
 .commentlist li ul.children .bypostauthor {
   outline: none;
@@ -850,7 +856,6 @@ COMMENTS
 }
 .commentlist .vcard cite.fn {
   /* name */
-
   font-weight: 700;
   font-style: normal;
 }
@@ -925,7 +930,6 @@ form[role=search] input[type=text] {
   line-height: 33px;
   padding-bottom: 1px;
   /* to fit those little lowercase 'g', 'y', etc. in */
-
 }
 .textwidget {
   font-size: 0.967em;
@@ -944,7 +948,7 @@ form[role=search] input[type=text] {
   padding: 0 0.25em;
 }
 #wp-calendar tbody a {
-  color: #000000;
+  color: black;
 }
 /*********************
 FOOTER
@@ -963,7 +967,6 @@ body.search .archive-title {
 }
 body.search .archive-title span {
   /* "search results for:" */
-
   font-style: normal;
 }
 /********************
@@ -983,7 +986,6 @@ body.search .archive-title span {
   html {
     height: 101%;
     /* force vertical scrollbar for horizontal consistency */
-  
   }
   .alignleft,
   img.alignleft {
@@ -1008,10 +1010,10 @@ body.search .archive-title span {
 /********* 768px+ STYLESHEET *************************************/
 @media only screen and (min-width: 768px) {
   /******************************************************************
-  
-  Stylesheet: 768px Wide & Up Stylesheet for Serena theme
-  
-  ******************************************************************/
+
+Stylesheet: 768px Wide & Up Stylesheet for Serena theme
+
+******************************************************************/
   .wrap {
     max-width: 1140px;
   }
@@ -1036,7 +1038,6 @@ body.search .archive-title span {
     padding-bottom: 0.25em;
     margin-bottom: 0.5em;
     /* end .nav li */
-  
   }
   .nav li {
     display: inline;
@@ -1045,7 +1046,6 @@ body.search .archive-title span {
     border-right: 1px solid #808080;
     padding: 4px 0;
     /* showing sub-menus */
-  
   }
   .nav li a {
     display: inline !important;
@@ -1074,15 +1074,15 @@ body.search .archive-title span {
   }
   /* end .nav */
   /*********************
-  FOOTER
-  *********************/
+FOOTER
+*********************/
   .credit {
     float: right;
   }
   /*********************
-  GRID
-  based on the 1140 grid: http://cssgrid.net/
-  *********************/
+GRID
+based on the 1140 grid: http://cssgrid.net/
+*********************/
   .onecol {
     width: 4.85%;
   }
@@ -1145,12 +1145,12 @@ body.search .archive-title span {
 /********* PRINT STYLESHEET **************************************/
 @media print {
   /******************************************************************
-  Site Name:
-  Author:
-  
-  Stylesheet: Print Stylesheet
-  
-  ******************************************************************/
+Site Name:
+Author:
+
+Stylesheet: Print Stylesheet
+
+******************************************************************/
   * {
     background: transparent !important;
     color: black !important;
@@ -1188,7 +1188,7 @@ body.search .archive-title span {
   img {
     page-break-inside: avoid;
   }
-  @page  {
+  @page {
     margin: 0.5cm;
   }
   p,

@@ -119,10 +119,10 @@ function serena_scripts_and_styles() {
   if (!is_admin()) {
 
     // register main stylesheet
-    wp_register_style( 'serena-stylesheet', get_stylesheet_directory_uri() . '/library/css/style.css', array(), '', 'all' );
+    wp_register_style( 'serena-stylesheet', get_stylesheet_directory_uri() . '/library/css/style.min.css', array(), '', 'all' );
 
     // ie-only style sheet
-    wp_register_style( 'serena-ie-only', get_stylesheet_directory_uri() . '/library/css/ie.css', array(), '' );
+    wp_register_style( 'serena-ie-only', get_stylesheet_directory_uri() . '/library/css/ie.min.css', array(), '' );
 	
 	// theme customizer styles
 	require get_template_directory() . '/library/custom-styles.php';
@@ -306,17 +306,15 @@ function serena_wpsearch($form) {
 function serena_customize_register( $wp_customize )
 {
 	// LOGO
-	$wp_customize->add_section( 'serena_logo_section' , array(
-	    'title'       => __( 'Logo', 'serena' ),
-	    'priority'    => 30,
-	    'description' => 'Upload a logo to replace the default site name and description in the header',
-	) );
 	
-	$wp_customize->add_setting( 'serena_logo' );
+	$wp_customize->add_setting( 'serena_logo', array(
+		'sanitize_callback' => 'esc_url_raw',
+	) );
 	
 	$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'serena_logo', array(
 	    'label'    => __( 'Logo', 'serena' ),
-	    'section'  => 'serena_logo_section',
+	    'section'  => 'title_tagline',
+	    'priority' => 1,
 	    'settings' => 'serena_logo',
 	) ) );
 	
@@ -378,7 +376,7 @@ class RecentPostExcerpts extends WP_Widget {
 
 	function RecentPostExcerpts() {
 			$widget_ops = array('classname' => 'recent_with_excerpt', 'description' => __( 'Excerpts of the most recent posts', 'serena') );
-			$this->WP_Widget('RecentPostExcerpts', __('Recent Post Excerpts', 'serena'), $widget_ops);
+			$this->__construct('RecentPostExcerpts', __('Recent Post Excerpts', 'serena'), $widget_ops);
 	}
 	
 	function widget( $args, $instance ) {
