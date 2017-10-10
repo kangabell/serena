@@ -6,9 +6,9 @@ _A clean, minimalist theme for writers and bloggers._
 
 Check out the live preview at http://web.kangabell.com/serena
 
-For setup instructions, visit the included _GettingStarted.html
+For setup instructions, visit the included http://web.kangabell.com/serena/_GettingStarted.html
 
-Serena WordPress theme, Copyright (C) 2015-2016 Kay Belardinelli
+Serena WordPress theme, Copyright (C) 2015-2017 Kay Belardinelli
 Theme URI: https://github.com/kangabell/serena
 
 Serena WordPress theme is licensed under the GPL.
@@ -39,6 +39,7 @@ Andreas Ribbefjord: @ribbefjord
 ## CHANGELOG
 
 v1.7.3 update
+- fixed library theme path to use parent rather than child.
 - update documentation.
 
 v1.7 update
