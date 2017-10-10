@@ -177,6 +177,8 @@ function serena_theme_support() {
 			'main-nav' => __( 'The Main Menu', 'serena' ),   // main nav in header
 		)
 	);
+
+	add_theme_support( 'title-tag' );
 	
 } /* end serena theme support */
 
@@ -198,28 +200,6 @@ function serena_main_nav() {
     	'fallback_cb' => 'serena_main_nav_fallback'      // fallback function
 	));
 } /* end serena main nav */
-
-
-/************* MODIFIED TITLE ********************/
-// makes a nicely formatted title to go in the head of the document
-
-function serena_wp_title( $title, $sep ) {
-	global $paged, $page;
-
-	if ( is_feed() )
-		return $title;
-
-	// Add the site name.
-	$title .= get_bloginfo( 'name' );
-
-	// Add the site description for the home/front page.
-	$site_description = get_bloginfo( 'description', 'display' );
-	if ( $site_description && ( is_home() || is_front_page() ) )
-		$title = "$title $sep $site_description";
-
-	return $title;
-}
-add_filter( 'wp_title', 'serena_wp_title', 10, 2 );
 
 
 /************* ACTIVE SIDEBARS ********************/

@@ -40,7 +40,8 @@ Andreas Ribbefjord: @ribbefjord
 
 v1.7.3 update
 - fixed library theme path to use parent rather than child.
-- update documentation.
+- update Title Tags implementation.
+- update Getting Started documentation WordPress 4.8.2.
 
 v1.7 update
 - fixed broken logo upload.

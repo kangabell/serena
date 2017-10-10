@@ -7,10 +7,16 @@
 	
 	<head>
 		<meta charset="<?php bloginfo('charset'); ?>">
-		
-		<title>
-			<?php wp_title('/', true, 'right'); ?>
-		</title>
+
+		<?php // backwards compatibility for wp_title (vs title-tag)
+		if ( ! function_exists( '_wp_render_title_tag' ) ) :
+		    function theme_slug_render_title() {
+		?>
+		<title><?php wp_title( '|', true, 'right' ); ?></title>
+		<?php
+		    }
+		    add_action( 'wp_head', 'theme_slug_render_title' );
+		endif; ?>
 		
 		<!-- mobile meta -->
 		<meta name="HandheldFriendly" content="True">
