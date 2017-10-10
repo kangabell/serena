@@ -1,7 +1,7 @@
 
 - - -
 
-#SERENA
+# SERENA
 _A clean, minimalist theme for writers and bloggers._
 
 Check out the live preview at http://web.kangabell.com/serena
@@ -15,7 +15,7 @@ Serena WordPress theme is licensed under the GPL.
 License URI: http://www.gnu.org/licenses/gpl.html
 
 
-##THANK YOU VERY MUCH
+## THANK YOU VERY MUCH
 
 Bones Development Theme by Eddie Machado
 License: WTFPL
@@ -36,7 +36,10 @@ Andreas Ribbefjord: @ribbefjord
 
 - - -
 
-##CHANGELOG
+## CHANGELOG
+
+v1.7.3 update
+- update documentation.
 
 v1.7 update
 - fixed broken logo upload.

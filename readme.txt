@@ -5,9 +5,9 @@ A clean, minimalist theme for writers and bloggers.
 
 Check out the live preview at http://web.kangabell.com/serena
 
-For setup instructions, visit the included GettingStarted.html
+For setup instructions, visit the included _GettingStarted.html
 
-Serena WordPress theme, Copyright (C) 2015 Kanga Bell Co.
+Serena WordPress theme, Copyright (C) 2015-2016 Kay Belardinelli
 Theme URI: https://github.com/kangabell/serena
 
 Serena WordPress theme is licensed under the GPL.
@@ -34,6 +34,9 @@ Andreas Ribbefjord: @ribbefjord
 
 
 ******************************************************************/
+
+/* v1.7.3 update */
+- update documentation.
 
 /* v1.7 update */
 - fixed broken logo upload.
