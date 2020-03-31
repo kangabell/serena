@@ -36,6 +36,9 @@ Andreas Ribbefjord: @ribbefjord
 
 ## CHANGELOG
 
+v1.7.4 update
+- remove deprecated menus theme support
+
 v1.7.3 update
 - fixed library theme path to use parent rather than child.
 - update Title Tags implementation.

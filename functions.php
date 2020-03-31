@@ -168,9 +168,6 @@ function serena_theme_support() {
 	// rss thingy
 	add_theme_support('automatic-feed-links');
 
-	// wp menus
-	add_theme_support( 'menus' );
-
 	// registering wp3+ menus
 	register_nav_menus(
 		array(
