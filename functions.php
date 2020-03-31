@@ -176,6 +176,8 @@ function serena_theme_support() {
 	);
 
 	add_theme_support( 'title-tag' );
+
+	add_theme_support( 'custom-background' );
 	
 } /* end serena theme support */
 
@@ -299,7 +301,6 @@ function serena_customize_register( $wp_customize )
 	$colors = array();
 	  $colors[] = array( 'slug'=>'text_color', 'default' => '#393939', 'label' => __( 'Text Color', 'serena' ) );
 	  $colors[] = array( 'slug'=>'highlight_color', 'default' => '#689de0', 'label' => __( 'Highlight Color', 'serena' ) );
-	  $colors[] = array( 'slug'=>'bg_color', 'default' => '#fefefe', 'label' => __( 'Background Color', 'serena' ) );
 
 	  foreach($colors as $color)
 	  {
