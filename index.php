@@ -9,16 +9,13 @@
 					    <article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article">
 							
 						    <header class="article-header">
-							
+
 								<p class="vcard"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php
 								  printf(__('<time datetime="%1$s" pubdate>%2$s</time>', 'serena'), get_the_time('Y-m-j'), get_the_time(get_option('date_format')) );
 								?></a></p>
 								<h1 class="entry-title single-title" itemprop="headline"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1>
-								<p class="author"><?php
-								  printf(__('by %1$s', 'serena'), serena_get_the_author_posts_link());
-								?></p>
-							    
-						
+								<p class="author"><?php echo serena_get_the_author_posts_link(); ?></p>
+
 						    </header> <!-- end article header -->
 					
 						    <section class="entry-content clearfix">

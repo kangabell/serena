@@ -96,17 +96,21 @@ function serena_excerpt_more($more) {
 /*
  * Modified the_author_posts_link(). Needed to allow usage of the usual l10n process with printf().
  */
-function serena_get_the_author_posts_link() {
-	global $authordata;
-	if ( !is_object( $authordata ) )
-		return false;
-	$link = sprintf(
-		'<a href="%1$s" title="%2$s" rel="author">%3$s</a>',
-		get_author_posts_url( $authordata->ID, $authordata->user_nicename ),
-		esc_attr( sprintf( __( 'Posts by %s', 'serena' ), get_the_author() ) ),
-		get_the_author()
-	);
-	return $link;
+if (!function_exists('serena_get_the_author_posts_link')) {
+	function serena_get_the_author_posts_link() {
+		global $authordata;
+		if ( !is_object( $authordata ) )
+			return false;
+		$link = sprintf(
+			'<a href="%1$s" title="%2$s" rel="author">%3$s</a>',
+			get_author_posts_url( $authordata->ID, $authordata->user_nicename ),
+			esc_attr( sprintf( __( 'Posts by %s', 'serena' ), get_the_author() ) ),
+			get_the_author()
+		);
+		$content = __('by', 'serena') . ' ' . $link;
+
+		return $content;
+	}
 }
 
 

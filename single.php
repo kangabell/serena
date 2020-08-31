@@ -14,7 +14,7 @@
 								?></p>
 								<h1 class="entry-title single-title" itemprop="headline"><?php the_title(); ?></h1>
 								<p class="author vcard"><?php
-								  printf(__('by %1$s, under %2$s', 'serena'), serena_get_the_author_posts_link(), get_the_category_list(', '));
+								  printf(__('%1$s, under %2$s', 'serena'), serena_get_the_author_posts_link(), get_the_category_list(', '));
 								?></p>
                   
 						
