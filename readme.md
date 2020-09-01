@@ -38,6 +38,7 @@ Andreas Ribbefjord: @ribbefjord
 
 v1.7.5 update
 - make author post link more pluggable in child themes
+- a11y: remove some redundant links
 
 v1.7.4 update
 - remove deprecated menus theme support
