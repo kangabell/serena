@@ -13,7 +13,7 @@
 								<p class="vcard"><?php
 								  printf(__('<time datetime="%1$s" pubdate>%2$s</time>', 'serena'), get_the_time('Y-m-j'), get_the_time(get_option('date_format')) );
 								?></p>
-								<h1 class="entry-title single-title" itemprop="headline"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1>
+								<h2 class="entry-title single-title h1" itemprop="headline"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
 								<p class="author"><?php echo serena_get_the_author_posts_link(); ?></p>
 
 						    </header> <!-- end article header -->
@@ -41,7 +41,7 @@
 					
 				        <article id="post-not-found" class="hentry clearfix">
 				            <header class="article-header">
-				        	    <h1><?php _e("Article Missing", "serena"); ?></h1>
+				        	    <h2 class="h1"><?php _e("Article Missing", "serena"); ?></h2>
 				        	</header>
 				            <section class="entry-content">
 				        	    <p><?php _e("Sorry, but something is missing. Please try again!", "serena"); ?></p>
