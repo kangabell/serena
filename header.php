@@ -38,15 +38,24 @@
 			
 			<header class="header wrap clearfix" role="banner">
 				<div id="inner-header">
-					<p id="logo" class="h1">
-						<?php if(get_theme_mod( 'serena_logo' )) : ?>				
-							<a href="<?php echo esc_url(home_url('/')); ?>" rel="nofollow"><img src="<?php echo get_theme_mod( 'serena_logo' ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"></a>
-						<?php else : ?>				
-							<a href="<?php echo esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a>				
-						<?php endif; ?>	
-						
-						
-					</p>					
+
+					<?php if ( is_home() ) : ?>
+						<h1 id="logo">
+							<?php if(get_theme_mod( 'serena_logo' )) : ?>				
+								<a href="<?php echo esc_url(home_url('/')); ?>" rel="nofollow"><img src="<?php echo get_theme_mod( 'serena_logo' ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"></a>
+							<?php else : ?>				
+								<a href="<?php echo esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a>				
+							<?php endif; ?>
+						</h1>
+					<?php else : ?>
+						<p id="logo" class="h1">
+							<?php if(get_theme_mod( 'serena_logo' )) : ?>				
+								<a href="<?php echo esc_url(home_url('/')); ?>" rel="nofollow"><img src="<?php echo get_theme_mod( 'serena_logo' ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"></a>
+							<?php else : ?>				
+								<a href="<?php echo esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a>				
+							<?php endif; ?>
+						</p>
+					<?php endif; ?>
 
 					<p id="blog-info"><?php bloginfo('description'); ?></p>
 				</div>
