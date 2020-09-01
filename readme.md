@@ -36,6 +36,9 @@ Andreas Ribbefjord: @ribbefjord
 
 ## CHANGELOG
 
+v1.7.5 update
+- make author post link more pluggable in child themes
+
 v1.7.4 update
 - remove deprecated menus theme support
 - fix PHP deprecation error "Methods with the same name as their class will not be constructors in a future version of PHP"
