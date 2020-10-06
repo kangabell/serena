@@ -33,6 +33,9 @@ Andreas Ribbefjord: @ribbefjord
 
 ******************************************************************/
 
+/* v1.7.6 update */
+- move articles for archive and index templates to template-parts directory
+
 /* v1.7.5 update */
 - make author post link more pluggable in child themes
 - a11y: remove some redundant links; logo is h1 on homepage
@@ -88,7 +91,6 @@ Andreas Ribbefjord: @ribbefjord
 - cleaned things up to be more wordpress.org compliant
 - removed modernizr
 - removed forced single post on blog/homepage
-
 
 /* v1.2 update */
 
